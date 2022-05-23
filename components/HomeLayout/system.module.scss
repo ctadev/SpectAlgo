@@ -1,0 +1,105 @@
+@use "../../styles/scssGlobal/" as *;
+
+.system {
+  height: 919px;
+  color: white;
+  background: #0f0f0f;
+  @include column_center;
+  gap: 3rem;
+
+  .top {
+    position: relative;
+    @include row_center;
+    padding: 0 136px;
+    gap: 1.5rem;
+    .left {
+      width: 470px;
+      h1 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 42px;
+        letter-spacing: -2px;
+        margin-bottom: 1rem;
+        span {
+          background: linear-gradient(270deg, #fe8888 27.16%, #8066ff 97.86%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+      }
+      p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 1rem;
+      }
+      button {
+        border: 3px solid #fe8888;
+        border-radius: 8px;
+        width: 179px;
+        height: 52px;
+        color: white;
+        background: transparent;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+
+    .divider {
+      position: absolute;
+      bottom: 0;
+      width: 1080px;
+      height: 2px;
+      background: #2e2e2e;
+    }
+  }
+
+  .bottom {
+    @include row_center;
+    padding: 0 180px;
+    .left {
+      padding: 0 93px;
+      h3 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 28px;
+        margin-top: 1rem;
+      }
+      p {
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 25px;
+        line-height: 26px;
+        margin-top: 1rem;
+      }
+    }
+
+    .right {
+      padding: 0 93px;
+      h3 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 28px;
+        margin-top: 0.5rem;
+      }
+      p {
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 25px;
+        line-height: 26px;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use "../../styles/scssGlobal/" as *;
+
+.video{
+    height: 789px;
+    background: #050711;
+    @include column_center;
+    h5{
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+}

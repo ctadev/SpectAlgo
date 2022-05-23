@@ -1,0 +1,57 @@
+@use "../../styles/scssGlobal/" as *;
+
+.tryit {
+  height: 1024px;
+  background: #050711;
+  @include row_center;
+  padding: 0 108px;
+  .left {
+    flex: 0.5;
+  }
+  .right {
+    flex: 0.5;
+    color: white;
+    .image_container {
+      @include row_center;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+    }
+    h1 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 42px;
+      letter-spacing: -2px;
+      margin-top: 1rem;
+      span {
+        background: linear-gradient(270deg, #fe8888 27.16%, #8066ff 97.86%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+    button {
+      border: 3px solid #fe8888;
+      border-radius: 8px;
+      width: 179px;
+      height: 52px;
+      color: white;
+      background: transparent;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 2rem;
+    }
+  }
+}

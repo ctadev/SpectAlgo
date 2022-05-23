@@ -1,0 +1,85 @@
+@use "../../styles/scssGlobal/" as *;
+
+.hero {
+  height: calc(100vh - 103px);
+  @include row_center;
+  padding: 0 29px 3rem 152px;
+  .leftside {
+    flex: 0.4;
+    .enhancing {
+      background: linear-gradient(90deg, #b224ef 0%, #7579ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 105px;
+    }
+    h1 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 105px;
+      color: #ffffff;
+      width: 535px;
+      height: 203px;
+    }
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      padding-right: 4rem;
+      margin-top: 1rem;
+    }
+    .btnContainer {
+      position: relative;
+      width: fit-content;
+      background: #7579ff;
+      button {
+        @include row_center;
+        margin-top: 2rem;
+        cursor: pointer;
+        gap: 0.5rem;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #ffffff;
+        padding: 16px 50px;
+        background: #1b1c37;
+        border: 6px solid;
+        border-image-slice: 1;
+        border-width: 6px;
+        border-image-source: linear-gradient(
+          180deg,
+          #c85dc0 -8.82%,
+          #ae44de 20.4%,
+          #bf54cc 49.27%,
+          #e6799a 78.95%
+        );
+      }
+      .btnArrow {
+        position: absolute;
+        right: -60px;
+        bottom: -70px;
+      }
+    }
+  }
+
+  .rightside {
+    flex: 0.6;
+    position: relative;
+    .bottomArrow {
+      position: absolute;
+      left: -50px;
+      bottom: -50px;
+    }
+  }
+}

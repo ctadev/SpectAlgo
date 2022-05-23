@@ -1,0 +1,57 @@
+@use "../../styles/scssGlobal/" as *;
+
+.navbar {
+  @include row_center;
+  justify-content: space-between;
+  padding: 25px 51px 25px 38px;
+  .menus {
+    @include row_center;
+    gap: 5rem;
+    ul {
+      @include row_center;
+      gap: 2rem;
+      li {
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        cursor: pointer;
+      }
+    }
+
+    .btns_container {
+      @include row_center;
+      gap: 1rem;
+      .signup_btn {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        color: white;
+        padding: 16px 30px;
+        background: #3884ff;
+        border: 1px solid #6c63ff;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .login_btn {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        color: #ffffff;
+        padding: 16px 30px;
+        background: #6c63ff;
+        border: 1px solid #6c63ff;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    }
+  }
+}
