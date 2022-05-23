@@ -2,7 +2,7 @@ import React from "react";
 import s from "./system.module.scss";
 import Image from "next/image";
 import YM from "../../public/images/ymfilter.png";
-import vector from "../../public/images/vector.png";
+import vector from "../../public/images/Vector.png";
 import play from "../../public/images/play.png";
 
 function System() {
